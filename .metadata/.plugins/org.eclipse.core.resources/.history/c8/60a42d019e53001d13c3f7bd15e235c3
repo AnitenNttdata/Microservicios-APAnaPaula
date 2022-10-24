@@ -1,0 +1,5 @@
+package com.nttdata.bootcamp.controller;
+
+public class TestController {
+
+}

@@ -1,0 +1,5 @@
+package com.nttdata.bootcamp.retoconfigservice.controller;
+
+public class TestController {
+
+}
