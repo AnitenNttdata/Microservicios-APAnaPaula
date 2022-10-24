@@ -1,6 +1,6 @@
 # Microservicios-APAnaPaula
-
-PARA EL EJERCICIO RETO-CONFIG-SERVICE
+-----------------------------------------------------------------------------------------------------------
+-----------------------------EJERCICIO RETO-CONFIG-SERVICE--------------------------------------------------
 
 1. SEGUIMOS LOS PASOS PROPUESTOS EN CLASE
 --MODIFICAR EL POM Y AÑADIRLES LAS DEPENDENCIAS FALTANTES--
@@ -10,3 +10,19 @@ PARA EL EJERCICIO RETO-CONFIG-SERVICE
  --CREAMOS EL CONTROLLER Y MANTENEMOS LOS MISMOS METODOS UTILIZADOS ANTERIORMENTE--
  
  2. ACCEDER--http://localhost:8085/getProductName-----
+ 
+ -------------------------------------------------------------------------------------------------------------
+ ---------------------------------EJERCICIO PRICESERVICE-------------------------------------------------------
+ 
+ ERRORES DETECTADOS EN EL EJERCICIO
+ 1. POM: --CAMBIAR VERSION DE SPRINGBOOT <version>2.6.13</version>---
+         --AÑADIR DEPENDENCIA EUREKA CLIENT <dependency>
+                                               <groupId>org.springframework.cloud</groupId>
+                                               <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		                                         </dependency>
+ 2. .YML  --AÑADIR PUERTO server: port: 8082-----
+          --AÑADIR defaultZone: http://localhost:8761/eureka/----
+          
+3. PRICE CONTROLLER --CAMBIAR LOS POST X GET--
+       
+ 
